@@ -4,7 +4,7 @@
     "baseUrl": "./",
     "paths": {
       "@environments/*": ["src/app/environments/*"],
-      "@pages/*": ["src/app/pages/*"]
+      "@pages/*": ["src/app/pages/*"],
       "@shared/*": ["src/app/shared/*"]
     },
     "outDir": "./dist/out-tsc",

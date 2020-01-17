@@ -3,20 +3,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { UilibPrimengModule } from '@shared/modules/uilib-primeng.module';
+
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HomePageComponent } from '@pages/home/home.component';
+import { NotFoundPageComponent } from '@pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    NotFoundComponent
+    HomePageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UilibPrimengModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
