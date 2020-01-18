@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/primeicons/primeicons.css';
+@import '../node_modules/primeng/resources/themes/nova-light/theme.css';
+@import '../node_modules/primeng/resources/primeng.min.css';
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.ui-tabview .ui-tabview-selected .ui-tabview-title {
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+app-root {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  height: 100%;
+  margin: 0 auto;
+  width:70%;
+}
+
+router-outlet + *:not(nav) {
+   display: flex;
+   flex-flow: column;
+   flex-grow: 1;
+   padding: 16px 0;
+}
